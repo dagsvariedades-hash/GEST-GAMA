@@ -7,7 +7,7 @@ videos = {
         {"titulo": "Modulo Inicial", "url": "https://www.youtube.com/embed/S3PR6wZLHac"},
         
     ],
-    "servicios": [{"titulo": "Reportes Avanzados", "url": "https://www.youtube.com/embed/ID3"}],
+    "Módulo servicios": [{"titulo": "Reportes Avanzados", "url": "https://www.youtube.com/embed/ID3"}],
     "admin":     [{"titulo": "Gestión de Usuarios", "url": "https://www.youtube.com/embed/ID4"}],
     "usuario":   [{"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}],
     "adminsec":  [{"titulo": "Delegación de Tareas", "url": "https://www.youtube.com/embed/ID6"}],
