@@ -1,0 +1,106 @@
+/* ---------- FONDO ANIMADO ---------- */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #fff;
+}
+
+.bg-animated {
+  background: linear-gradient(-45deg, #0d6efd, #20c997, #6610f2, #e83e8c);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------- SIDEBAR ESCRITORIO ---------- */
+.sidebar {
+  width: 260px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  transition: all .3s ease;
+}
+.sidebar-header .logo { width: 80px; border-radius: 10px; }
+.sidebar .nav-link {
+  color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+  transition: background .2s, transform .2s;
+}
+.sidebar .nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateX(4px);
+}
+.social a { color: #f8f9fa; font-size: 1.1rem; transition: color .2s; }
+.social a:hover { color: #0d6efd; }
+
+main {
+  margin-left: 260px;
+  min-height: 100vh;
+}
+
+/* ---------- CARTAS / GLASS ---------- */
+.glass {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* ---------- VIDEOS RESPONSIVE ---------- */
+.ratio-16x9 iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: .75rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  /* Sidebar -> barra superior */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    padding: .5rem;
+    backdrop-filter: blur(20px);
+  }
+  main {
+    margin-left: 0;
+    padding-top: 5rem;
+  }
+  .sidebar-header {
+    display: none; /* Oculta logo grande */
+  }
+  .sidebar ul.nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+  }
+  .sidebar .nav-link {
+    padding: .5rem .75rem;
+    font-size: 0.9rem;
+    background: rgba(255,255,255,0.1);
+  }
+  .social { display: none; }
+}
+
+@media (max-width: 576px) {
+  .glass { padding: 1rem; }
+  .ratio-16x9 iframe { min-height: 200px; }
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Contacto – GEST GAMA{% endblock %}
+{% block content %}
+<div class="container">
+  <h2 class="fw-bold text-white mb-4">Contáctanos</h2>
+
+  <form method="POST" class="row g-3 glass p-4 rounded">
+    <div class="col-md-6">
+      <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Correo" required>
+    </div>
+    <div class="col-12">
+      <textarea name="mensaje" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary px-4" type="submit">Enviar</button>
+    </div>
+  </form>
+
+  <div class="mt-4 text-white">
+    <p><i class="fa fa-envelope text-primary"></i> soporte@gestgama.com</p>
+    <p><i class="fa fa-phone text-primary"></i> +57 300 000 0000</p>
+    <p><i class="fab fa-whatsapp text-primary"></i>
+      <a href="https://wa.me/573000000000" class="text-decoration-none text-white">WhatsApp</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
