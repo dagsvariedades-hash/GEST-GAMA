@@ -3,14 +3,23 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 videos = {
+
     "inicial": [
         {"titulo": "Modulo Inicial", "url": "https://www.youtube.com/embed/S3PR6wZLHac"},
         
     ],
     "servicios": [{"titulo": "Módulo servicio Documentos", "url": "https://www.youtube.com/embed/qLTjuXOJPnA"}],
+
 "servicios": [{"titulo": "Módulo servicio Backup", "url": "https://www.youtube.com/embed/WaPmLqCnt9I"}],
+
+
     "admin":     [{"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}],
+
+
     "usuario":   [{"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}],
+
+
+
     "adminsec":  [{"titulo": "Delegación de Tareas", "url": "https://www.youtube.com/embed/ID6"}],
 }
 
