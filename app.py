@@ -7,8 +7,9 @@ videos = {
         {"titulo": "Modulo Inicial", "url": "https://www.youtube.com/embed/S3PR6wZLHac"},
         
     ],
-    "servicios": [{"titulo": "Reportes Avanzados", "url": "https://www.youtube.com/embed/ID3"}],
-    "admin":     [{"titulo": "Gestión de Usuarios", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}],
+    "servicios": [{"titulo": "Módulo servicio Documentos", "url": "https://www.youtube.com/embed/qLTjuXOJPnA"}],
+"servicios": [{"titulo": "Módulo servicio Documentos", "url": "https://www.youtube.com/embed/qLTjuXOJPnA"}],
+    "admin":     [{"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}],
     "usuario":   [{"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}],
     "adminsec":  [{"titulo": "Delegación de Tareas", "url": "https://www.youtube.com/embed/ID6"}],
 }
