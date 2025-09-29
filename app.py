@@ -8,7 +8,7 @@ videos = {
         
     ],
     "servicios": [{"titulo": "Reportes Avanzados", "url": "https://www.youtube.com/embed/ID3"}],
-    "admin":     [{"titulo": "Gestión de Usuarios", "url": "https://www.youtube.com/embed/ID4"}],
+    "admin":     [{"titulo": "Gestión de Usuarios", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}],
     "usuario":   [{"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}],
     "adminsec":  [{"titulo": "Delegación de Tareas", "url": "https://www.youtube.com/embed/ID6"}],
 }
