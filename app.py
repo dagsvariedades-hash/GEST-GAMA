@@ -15,7 +15,7 @@ videos = {
         {"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}
     ],
     "usuario": [
-        {"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}
+        {"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/mAS5iq7M0s8"}
     ],
 }
 
