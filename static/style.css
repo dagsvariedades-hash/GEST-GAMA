@@ -2,6 +2,9 @@
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .bg-animated {
@@ -13,6 +16,46 @@ body {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* ---------- FIGURAS DECORATIVAS ---------- */
+.shapes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+.shape {
+  position: absolute;
+  opacity: 0.15;
+  animation: float 12s infinite ease-in-out;
+}
+.shape.circle {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  top: 20%; left: 10%;
+  animation-delay: 0s;
+}
+.shape.triangle {
+  width: 0; height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #fff;
+  top: 70%; left: 80%;
+  animation-delay: 4s;
+}
+.shape.square {
+  width: 80px; height: 80px;
+  background: #fff;
+  top: 50%; left: 40%;
+  animation-delay: 8s;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-40px) rotate(20deg); }
 }
 
 /* ---------- SIDEBAR ESCRITORIO ---------- */
@@ -28,6 +71,7 @@ body {
   flex-direction: column;
   padding-top: 1rem;
   transition: all .3s ease;
+  z-index: 10;
 }
 .sidebar-header .logo { width: 80px; border-radius: 10px; }
 .sidebar .nav-link {
@@ -40,6 +84,7 @@ body {
 .sidebar .nav-link:hover {
   background: rgba(255,255,255,0.2);
   transform: translateX(4px);
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 .social a { color: #f8f9fa; font-size: 1.1rem; transition: color .2s; }
 .social a:hover { color: #0d6efd; }
@@ -47,6 +92,8 @@ body {
 main {
   margin-left: 260px;
   min-height: 100vh;
+  position: relative;
+  z-index: 1; /* sobre las figuras */
 }
 
 /* ---------- CARTAS / GLASS ---------- */
@@ -55,6 +102,12 @@ main {
   backdrop-filter: blur(18px);
   border-radius: 1rem;
   padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ---------- VIDEOS RESPONSIVE ---------- */
@@ -64,6 +117,29 @@ main {
   aspect-ratio: 16/9;
   border: none;
   border-radius: .75rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* ---------- BOTONES PRO ---------- */
+.btn-pro {
+  background: linear-gradient(45deg, #0d6efd, #6610f2);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: transform .25s, box-shadow .25s;
+  display: inline-block;
+}
+.btn-pro:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
+/* ---------- TITULOS ---------- */
+h1, h2, h3, h4 {
+  color: #f8f9fa;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -83,7 +159,7 @@ main {
     padding-top: 5rem;
   }
   .sidebar-header {
-    display: none; /* Oculta logo grande */
+    display: none;
   }
   .sidebar ul.nav {
     flex-direction: row;
@@ -103,4 +179,12 @@ main {
 @media (max-width: 576px) {
   .glass { padding: 1rem; }
   .ratio-16x9 iframe { min-height: 200px; }
+  .btn-pro { width: 100%; }
+  .shape.circle { width: 60px; height: 60px; }
+  .shape.triangle { 
+    border-left: 30px solid transparent; 
+    border-right: 30px solid transparent; 
+    border-bottom: 60px solid #fff;
+  }
+  .shape.square { width: 40px; height: 40px; }
 }
