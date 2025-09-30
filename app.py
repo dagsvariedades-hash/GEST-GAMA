@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 videos = {
     "inicial": [
-        {"titulo": "Modulo Inicial", "url": "https://www.youtube.com/embed/S3PR6wZLHac"},
+        {"titulo": "Módulo Inicial", "url": "https://www.youtube.com/embed/S3PR6wZLHac"},
     ],
     "servicios": [
         {"titulo": "Servicio Documentos", "url": "https://www.youtube.com/embed/qLTjuXOJPnA"},
@@ -12,7 +12,7 @@ videos = {
         {"titulo": "Servicio Actividades", "url": "https://www.youtube.com/embed/l4rX6k936lI"},
     ],
     "admin": [
-        {"titulo": "Gestión de Usuarios", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}
+        {"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}
     ],
     "usuario": [
         {"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/ID5"}
