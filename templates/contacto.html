@@ -1,30 +1,26 @@
 {% extends "base.html" %}
 {% block title %}Contacto – GEST GAMA{% endblock %}
 {% block content %}
-<div class="container">
+<div class="container text-center">
   <h2 class="fw-bold text-white mb-4">Contáctanos</h2>
 
-  <form method="POST" class="row g-3 glass p-4 rounded">
-    <div class="col-md-6">
-      <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
-    </div>
-    <div class="col-md-6">
-      <input type="email" name="email" class="form-control" placeholder="Correo" required>
-    </div>
-    <div class="col-12">
-      <textarea name="mensaje" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary px-4" type="submit">Enviar</button>
-    </div>
-  </form>
+  <!-- Botón directo a WhatsApp -->
+  <a href="https://wa.me/573223402808?text=Hola%20👋%20quiero%20más%20información%20sobre%20GEST%20GAMA" 
+     class="btn btn-success btn-pro px-4 py-3" target="_blank">
+    <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+  </a>
 
-  <div class="mt-4 text-white">
+  <!-- Datos de contacto extra -->
+  <div class="mt-5 text-white">
     <p><i class="fa fa-envelope text-primary"></i> gestgama@gmail.com</p>
-    <p><i class="fa fa-phone text-primary"></i> +57 3223402808</p>
+    <p><i class="fa fa-phone text-primary"></i> +57 322 340 2808</p>
     <p><i class="fab fa-whatsapp text-primary"></i>
-      <a href="https://wa.me/573223402808" class="text-decoration-none text-white">WhatsApp</a>
+      <a href="https://wa.me/573223402808" class="text-decoration-none text-white" target="_blank">
+        WhatsApp Directo
+      </a>
     </p>
   </div>
 </div>
 {% endblock %}
+
+
