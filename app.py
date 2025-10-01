@@ -12,12 +12,12 @@ videos = {
         {"titulo": "Servicio Actividades", "url": "https://www.youtube.com/embed/l4rX6k936lI"},
     ],
     "admin": [
-        {"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}
+        {"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"},
         
     ],
     "usuario": [
-        {"titulo": "Contestar Radicados por correo", "url": "https://www.youtube.com/embed/mAS5iq7M0s8"}
-        {"titulo": "Radicados Informativos", "url": "https://www.youtube.com/embed/mOXoVG7Ow_U"}
+        {"titulo": "Radicados por correo", "url": "https://www.youtube.com/embed/mAS5iq7M0s8"},
+        {"titulo": "Radicados Informativos", "url": "https://www.youtube.com/embed/mOXoVG7Ow_U"},
     ],
 }
 
