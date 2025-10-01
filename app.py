@@ -13,9 +13,11 @@ videos = {
     ],
     "admin": [
         {"titulo": "Módulo Administrador", "url": "https://www.youtube.com/embed/CFO7UVCBMog"}
+        
     ],
     "usuario": [
-        {"titulo": "Uso Diario", "url": "https://www.youtube.com/embed/mAS5iq7M0s8"}
+        {"titulo": "Contestar Radicados por correo", "url": "https://www.youtube.com/embed/mAS5iq7M0s8"}
+        {"titulo": "Radicados Informativos", "url": "https://www.youtube.com/embed/mOXoVG7Ow_U"}
     ],
 }
 
